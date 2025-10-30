@@ -1,1 +1,24 @@
-modification
+  214  mkdir ex4
+  215  cd ex4
+  216  git init
+  217  echo "Bonjour exercice 4" > fichier.txt
+  218  git add fichier.txt
+  219  git commit -m "C1 : premier commit sur ex4"
+  220  echo "Modification" >> fichier.txt
+  221  echo "C2 : modification commit" >> fichier.txt
+  222  git commit -am "C2 : modification commit"
+  223  git checkout C1
+  224  git checkout main
+  225  git checkout C1
+  226  git log --oneline
+  227  git checkout C1
+  228  git checkout 671f643
+  229  git switch -c C1
+  230  git branch B1
+  231  echo "C3 : modification commit3 du fichier" >> fichier.txt
+  232  git commit -am "C3 : modification commit3 du fichier"
+  233  git checkout main
+  234  git merge B1
+  235  history
+
+ 
